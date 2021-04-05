@@ -1,0 +1,130 @@
+// Sales Analytics
+.salesAnalytics {
+  border-radius: 10px;
+  background-color: #fff !important;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+.salesAnalyticsHeader {
+  display: flex;
+  padding: 1rem 0rem;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  button {
+    border: none;
+    margin-right: 0.5rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    border: 1px solid #eee;
+  }
+}
+.salesAnalyticsSubHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  .shopTitle {
+    h4 {
+      font-weight: 600;
+    }
+  }
+  .shopDetails {
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    h4 {
+      margin-right: 1rem;
+      align-self: flex-end;
+      font-size: 1.2rem;
+    }
+    span {
+      color: #13cb69;
+      font-weight: 600;
+      font-size: 1.6rem;
+    }
+    button {
+      border: none;
+      background-color: #13cb69;
+      color: #fff;
+      padding: 0.5rem 2rem;
+      border-radius: 10px;
+    }
+  }
+}
+
+// analyticsContainers
+.analyticsContainers {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+  flex-wrap: wrap;
+  .analyticsContainer {
+    background-color: #999;
+    margin-right: 1rem;
+    border-radius: 10px;
+    padding: 1rem 1.5rem;
+    flex-basis: 25%;
+    color: #fff;
+    margin-bottom: 0.5rem;
+  }
+  .analyticsContainer:nth-child(1) {
+    background-color: #13cb69;
+  }
+  .analyticsContainer:nth-child(2),
+  .analyticsContainer:nth-child(5),
+  .analyticsContainer:nth-child(8) {
+    background-color: #f56666;
+  }
+  .analyticsContainer:nth-child(3),
+  .analyticsContainer:nth-child(6) {
+    background-color: #ffc303;
+  }
+  .analyticsContainer:nth-child(4) {
+    background-color: #6c63ff;
+  }
+
+  .analyticsContainer:nth-child(7) {
+    background-color: #6c63ff;
+  }
+
+  .analyticsContainer:nth-child(9) {
+    background-color: #ff7f10;
+  }
+}
+
+@media (max-width: 1100px) {
+  .salesAnalyticsSubHeader {
+    padding: 0.5rem 0;
+    .shopTitle {
+      h4 {
+        font-weight: 300;
+      }
+    }
+    .shopDetails {
+      h4 {
+        margin-right: 1rem;
+        font-size: 1rem;
+      }
+      span {
+        font-weight: 300;
+        font-size: 1.2rem;
+      }
+      button {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 520px) {
+  .analyticsContainer {
+    flex-basis: 40% !important;
+  }
+}

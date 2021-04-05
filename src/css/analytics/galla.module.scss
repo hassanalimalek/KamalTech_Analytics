@@ -1,0 +1,40 @@
+// Galla
+.galla {
+  border-radius: 10px;
+  background-color: #fff;
+}
+.gallaHeader {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.gallaBody {
+  padding: 1rem !important;
+}
+.shop {
+  background-color: #b1d06f;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1rem 0.4rem;
+  margin-bottom: 1rem;
+  .shopHeader {
+    margin-bottom: 1rem;
+  }
+  .shopBody {
+    display: flex;
+    justify-content: space-around;
+    .shopBodySalesDetail {
+      //   margin-left: 1rem;
+      //   padding-right: 1rem;
+      //   padding-left: 2rem;
+      //   margin: 0.5rem 0.5rem 0.5rem 1rem;
+      //   border-right: 1px solid orchid;
+    }
+    .shopBodySalesDetail:last-child {
+      border-right: none;
+    }
+  }
+}

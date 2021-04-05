@@ -1,0 +1,106 @@
+.totalSales {
+  border-radius: 10px;
+  background-color: #fff !important;
+}
+
+// Header Bar
+
+.headerBar {
+  padding: 0.3rem 1rem;
+  border-bottom: 0.25px solid #eee;
+}
+.headerBar_totalSales {
+  display: flex;
+  border-right: 0.1px solid #eee;
+  padding: 0.3rem;
+  justify-content: center;
+  flex: 1;
+}
+.totalSales_ImgWrapper {
+  align-self: center;
+  background-color: #13cb69;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-right: 1rem;
+  .totalSalesImg {
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    opacity: 1;
+  }
+}
+.totalSales_BasicDetails {
+  .totalSales_saleFigure {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .totalSales_saleType {
+    margin: 0;
+    font-weight: 300;
+  }
+}
+
+// Header Bar --- Sales Details
+.headerBar_salesDetails {
+  padding: 0rem 0.5rem;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 300;
+  .byCash {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    .byCashValue {
+      font-weight: 400;
+    }
+  }
+  .byHand {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    .byHandValue {
+      font-weight: 400;
+    }
+  }
+}
+
+// Sales Graph
+.graphContainer {
+  padding: 0rem;
+}
+
+@media (max-width: 1100px) {
+  .totalSales_BasicDetails {
+    .totalSales_saleFigure {
+      margin-bottom: 0.75rem;
+      font-size: 1.2rem;
+    }
+    .totalSales_saleType {
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+  .totalSales_ImgWrapper {
+    padding: 0.25rem;
+    margin-right: 0.25rem;
+    .totalSalesImg {
+      width: 30px;
+    }
+  }
+  .headerBar_salesDetails {
+    padding: 0rem 0.25rem;
+    font-size: 0.8rem;
+    .byCash {
+      .byCashValue {
+        font-weight: 300;
+      }
+    }
+    .byHand {
+      .byHandValue {
+        font-weight: 300;
+      }
+    }
+  }
+}

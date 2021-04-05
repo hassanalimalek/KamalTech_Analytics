@@ -1,0 +1,86 @@
+.totalPurchase {
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+// Header Bar
+
+.headerBar {
+  display: flex;
+  padding: 0.3rem 1rem;
+  border-bottom: 0.25px solid #eee;
+}
+.headerBar_totalPurchase {
+  display: flex;
+
+  padding: 0.3rem;
+  justify-content: center;
+  flex: 1;
+}
+.totalPurchase_ImgWrapper {
+  align-self: center;
+  background-color: #ffc303;
+  border-radius: 50%;
+  padding: 0.75rem;
+  margin-right: 1rem;
+  .totalPurchaseImg {
+    color: #fff;
+    border-radius: 50%;
+    width: 40px;
+    opacity: 1;
+  }
+}
+.totalPurchase_BasicDetails {
+  .totalPurchase_saleFigure {
+    margin-bottom: 0.75rem;
+    font-size: 1.5rem;
+  }
+  .totalPurchase_saleType {
+    margin: 0;
+    font-weight: 300;
+  }
+}
+
+// Header Bar --- Sales Details
+.headerBar_salesDetails {
+  padding: 0rem 0.5rem;
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 300;
+  .byCash {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    .byCashValue {
+      font-weight: 400;
+    }
+  }
+  .byHand {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    .byHandValue {
+      font-weight: 400;
+    }
+  }
+}
+
+// Sales Graph
+.graphContainer {
+  padding: 0rem;
+}
+
+@media (max-width: 1100px) {
+  .totalPurchase_BasicDetails {
+    .totalPurchase_saleFigure {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+    }
+    .totalPurchase_saleType {
+      margin: 0;
+      font-weight: 300;
+    }
+  }
+}
